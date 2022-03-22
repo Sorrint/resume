@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+
+.navigation {
+    background-color: #f5f5f5;
+    margin: 20px 0 0 -300px;
+    font-size: 14px;
+    color: #000;
+    position: fixed;
+}
+
+.navigation__item{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 280px;
+    margin-bottom: 5px;
+}
+
+.navigation__item:hover{
+    background-color: rgb(236, 236, 231);
+}
+
+.navigation__item span{
+    text-indent: 10px;
+}
+.navigation__item img{
+    max-width: 17px;
+    background-color: #f1f1f1;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    font-style: oblique;
+}
+
+.name p {
+    font-family: 'roboto', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    margin: 0 0 8px 20px;
+    text-indent: 15px;
+    letter-spacing: 1px;
+    color:rgb(56, 56, 55);
+    border-left: 6px solid #446a91;
+}
+
+.name p:last-child{
+    margin: 0 0 0 20px;
+}
+
+@media (max-width: 1400px) {
+    .navigation {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .name p {
+        text-align: center;
+        text-indent: 0px;
+        border: none;
+        margin-left: 10px;
+    }
+
+    .name span {
+        display: block;
+    };
+}   
+
+.name span {
+    font-weight: bold;
+    padding: 0 0 0 5px;
+}
+
+.header img{
+    width: 200px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    /* padding: 5px; */
+}
+
+a img{
+    width: 30px;
+}
+
+a:hover {
+    font-size: 1.03em;
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+    padding-right: 10px;
+    transition: 0.5s ease;
+}
+
+a img:hover{
+    width: 35px;
+    transition: 0.5s ease;
+
+}
+
+a:active {
+    color: blue;
+    opacity: 1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background: #f1f1f1;
+    color: #0f141e;
+}
+
+.card__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+
+.card__image{
+    color: #446a91;
+    width: 30px;
+}
+
+h1 {
+    text-shadow: 1px 1px 3px rgb(114, 114, 114);
+    display: inline-block;
+    color: #446a91;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #446a91;
+    text-transform: uppercase;
+}
+
+h3:hover{
+   padding-left: 10px;
+   transition: 0.5s ease; 
+   cursor: pointer;
+   border-bottom: 3px solid #446a91;
+}
+
+.education {
+    background-color: rgba(133, 220, 181, 0.3);
+}
+
+.education__text {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.education__p1 {
+    width: 30%;
+    color: #0f141e;
+    opacity: 0.6;
+}
+
+.education__p2 {
+    width: 70%;
+}
+.profile {
+    width: 30px;
+}
+
+.avatar {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.info{
+    display: flex;
+    text-align: justify;
+    background-color: rgba(226, 125, 96, 0.3);
+}
+
+.info__text {
+    padding: 0 15px 0 0;
+    text-indent: 20px;
+}
+
+.card {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-spacing: 10px;
+    border-radius: 10px;
+    padding: 10px 0px 10px 30px;
+    margin-bottom: 10px;
+}
+
+.header {
+    margin-top: 20px;
+    border: none;
+    display: flex;
+}
+
+@media (max-width: 650px) {
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .info{
+        margin: 10px;
+        display: block;
+        text-align: center;
+    }
+}
+
+.works {
+    background-color: rgba(232, 168, 124, 0.3)
+}
+.hobbi {
+    background-color: rgba(195, 141, 158, 0.3);
+}
+
+.list li {
+    color:rgb(75, 75, 75);
+    margin: 10px;
+}
+
+.additional {
+    background-color: rgba(86, 94, 207, 0.1);
+}
+
+.info p {
+    font-size: 16px;
+    font-style: oblique;
+    color:rgb(56, 56, 55);
+    padding-bottom: 10px;
+}
+
+.refContacts {
+    margin: 0px 5px 0px 0px;
+}
+
+.refContacts:hover {
+    color: greenyellow;
+}
+
+.table {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(3){
+    text-align: center;
+}
+
+.table th {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgba(232, 168, 124, 0.5);
+}
+
+.additional__list {
+    list-style: none;
+}
+
+.additional__list li {
+    padding-bottom: 15px;
+    padding-left: 30px;
+    justify-content: center;
+    line-height: 25px;
+    align-items: center;
+    background: url(images/check.png) 0px 3px no-repeat;
+    color:rgb(56, 56, 55);
+}
+
+.additional__list li:last-child{
+    background: none;
+}
+
+.additional__list li:hover{
+    background: url(images/check_red.png) 0px 3px no-repeat;
+}
+
+.additional__list li:last-child:hover{
+    background: none;
+
+}
+
+.feedback {
+    position: relative;
+    height: 250px;
+    background-color: rgba(0,150,200,0.2);
+}
+
+.feedback label {
+    display: block;
+    margin-top: 10px;
+}
+
+.feedback__data {
+    display: flex;
+}
+
+.feedback__contacts, .feedback__message {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.feedback input, .feedback textarea {
+    width: 80%;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: rgba(68, 73, 75, 0.05);
+}
+
+.feedback textarea {
+    height: 70px;
+}
+
+.contacts {
+    display: flex;
+    margin-top: 10px;
+}
+
+.btn {
+    font-size: 16px;
+    display: block;
+    border: none;
+    background-color: rgb(155, 155, 247);
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    position: absolute;
+    right: 75px;
+    bottom: 10px;
+    padding: 10px 15px;
+}
+
+.btn:hover{
+    opacity: 0.6;
+}
+
+span:hover{
+    color:orangered
+}
+@media (max-width: 650px) {
+    .card__image{
+        display: none;
+    }
+    .card__label{
+        justify-content: center;
+        text-indent: 0px;
+    }
+    
+    .card {
+        padding: 10px 0 0 10px;
+    }
+
+    .education__text{
+        display: block;
+    }
+
+    .contacts {
+        justify-content: center;
+    }
+
+    .additional__list {
+        padding: 0 0 0 5px;
+    }
+
+    .additional__list li:last-child{
+        margin: 0 0 0 -40px;
+    }
+
+    .feedback {
+        height: 320px;
+        width: 100%;
+    }
+    .feedback__data{
+        display: block;
+    }
+    
+    .feedback__contacts, .feedback__message {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .btn {
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .feedback input, .feedback textarea {
+        width: 85%;
+    }
+}
